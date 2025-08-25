@@ -3,25 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/3b4f0d74be.js" 
+    crossorigin="anonymous">
+    </script>
     <link rel="stylesheet" href="styles.css">
     <title>Document</title>
 </head>
 <body>
+    <main>
     <header>
         <p>Oraganize Me</p>
         <nav>
             <ul>
                 <li>My Task</li>
-                <li>+ New Task</li>
+                <li id="newTask"><span>+</span> New Task</li>
             </ul>
+            <input id="inputText" type="text" placeholder="Add new task">
         </nav>
     </header>
-    <main>
-        <div>
-            <input type="text" placeholder="Add new task">
-        </div>
-    </main>
+        <section class="add_task">
+            <h2>Task</h2>
+        </section>
+        <section class="task_section">
+            <div class="task_details"></div>
+        </section>
     <footer></footer>
+    </main>
     <script src="index.js"></script>
 </body>
 </html>
